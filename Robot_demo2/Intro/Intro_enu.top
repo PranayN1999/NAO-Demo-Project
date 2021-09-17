@@ -1,0 +1,14 @@
+topic: ~Intro()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(I came here to buy a car) We have all varieties of vehicles including SUVs, sedans, MUVs etc. Which one would you like to see?
+
+u:(I would like to see sedan. Which models are available?) We have M4 series, M5 series and the latest model is 4 coupe.

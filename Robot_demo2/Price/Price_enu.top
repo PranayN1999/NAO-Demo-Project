@@ -1,0 +1,14 @@
+topic: ~Price()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(input $price_input==benz)The price is 10000 dollars$onStopped=1
+
+u:(input $price_input==bmw)The price is 15000 dollars$onStopped=1

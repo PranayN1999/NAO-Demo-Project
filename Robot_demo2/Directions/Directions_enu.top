@@ -1,0 +1,17 @@
+topic: ~Directions()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(I want some directions) Sure sir, which directions do you want
+u:^private(Where is the bathroom) It is on ground floor left of exit
+
+u:^private(Where is the exit) It is present on the Ground Floor besides entrance
+
+u:^private(Where is the *) Sorry, I don't know about those things. You can ask the support staff present over there.

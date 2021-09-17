@@ -1,0 +1,20 @@
+topic: ~Vehicle_Info()
+language: enu
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+u:(I want some info on vehicles) sure sir, Which type of vehicle do you wanna know
+
+u:(what are the specifications of this car?) It has latest technology like In-car apps, intelligent voice assistance or smartphone integration: ultra-modern driver assistance systems and innovative digital services ensure a seamless driving. gives a sportive stylish look on the outside, without compromising the luxury interior.
+
+
+u:^private(I would like to know about sedan) Sedan is a passenger vehicle, which is suitable for daily use in the city
+u:^private(I would like to know about SUV) Sedan is a strong vehicle, which is suitable for carrying heavy loads or travelling off terrain roads.
+u:^private(I would like to know about *) Sorry, I don't know about those things. You can ask the support staff over there.
+u:^private(I want to know about the price of _* car) The price of $1 car is 10,000 dollars
